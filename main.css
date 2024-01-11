@@ -1,14 +1,22 @@
 body {
     margin: 30px 0 0 0  ;
     padding: 25px 100px; /* הסרת padding יתר של header והוספת padding קטן לרשימה */
-    font-family: Arial;
-    background-image:linear-gradient(
-            rgba(255, 255, 255, 1),
-            rgba(61, 27, 151, 0.3)
+    font-family: Arial, fantasy;
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.7)
     ),url(https://i.pinimg.com/564x/93/1d/4a/931d4a7c7aa342facdac2e5dd8852ec5.jpg);
-
-    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: bottom 0 ;
 }
+/*
+linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )
+  <side-or-corner> = [ left | right ] || [ top | bottom ]
+  <color-stop-list> = <linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#
+  <linear-color-stop> = <color> &&<length-percentage>?
+  <linear-color-hint> = <length-percentage>
+  <length-percentage> = <length> | <percentage>*/
 
 .title {
     text-align: center;
@@ -20,7 +28,7 @@ body {
 }
 
 .top_menu ul {
-    font-family: Arial;
+    font-family: Arial, fantasy;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -29,6 +37,7 @@ body {
 
 .inner_menu {
     margin-right: 20px;
+    font-weight: bold;
 }
 
 .inner_menu a {
@@ -39,7 +48,7 @@ body {
 }
 
 .the_entrance {
-    font-family: Arial;
+    font-family: Arial, fantasy;
     text-align: center;
     color: black;
     padding: 40px 150px;
