@@ -10,13 +10,6 @@ body {
     background-attachment:fixed;
     background-position: bottom 0 ;
 }
-/*
-linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )
-  <side-or-corner> = [ left | right ] || [ top | bottom ]
-  <color-stop-list> = <linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#
-  <linear-color-stop> = <color> &&<length-percentage>?
-  <linear-color-hint> = <length-percentage>
-  <length-percentage> = <length> | <percentage>*/
 
 .title {
     text-align: center;
