@@ -1,0 +1,120 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  /*display: flex;
+  align-items: center;
+  text-align: center; /* יישור טקסט למרכז */
+}
+
+
+body,h1 {font-family: "Montserrat", sans-serif}
+
+/* יישור לאמצע אתר בסוגריים עבים */
+/*body > * {
+    margin: 10px; /* רווח בין האלמנטים 
+  }*/
+
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+
+
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/w3images/parallax1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* יישור לאמצע אתר בסוגריים עבים */
+  div  > * {
+    margin: 10px; /* רווח בין האלמנטים */
+  }
+
+/*div :not(#myGrid1):not(#myGrid2):not(#myGrid3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* יישור לאמצע אתר בסוגריים עבים */
+ /* div :not(#myGrid1):not(#myGrid2):not(#myGrid3) > * {
+    margin: 10px; /* רווח בין האלמנטים */
+  /*}*/
+
+
+
+  /*
+  <!-- Photo Grid -->
+    <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+      <div class="w3-third" id="myGrid1">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sound.jpg" style="width:100%">
+        <img src="/w3images/woods.jpg" style="width:100%">
+        <img src="/w3images/rock.jpg" style="width:100%">
+        <img src="/w3images/nature.jpg" style="width:100%">
+        <img src="/w3images/mist.jpg" style="width:100%">
+      </div>
+    
+      <div class="w3-third" id="myGrid2">
+        <img src="/w3images/coffee.jpg" style="width:100%">
+        <img src="/w3images/bridge.jpg" style="width:100%">
+        <img src="/w3images/notebook.jpg" style="width:100%">
+        <img src="/w3images/london.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/avatar_g.jpg" style="width:100%">
+      </div>
+    
+      <div class="w3-third" id="myGrid3">
+        <img src="/w3images/mist.jpg" style="width:100%">
+        <img src="/w3images/workbench.jpg" style="width:100%">
+        <img src="/w3images/gondol.jpg" style="width:100%">
+        <img src="/w3images/skies.jpg" style="width:100%">
+        <img src="/w3images/lights.jpg" style="width:100%">
+        <img src="/w3images/workshop.jpg" style="width:100%">
+      </div>
+    </div>
+  */
+  
