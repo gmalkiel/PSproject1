@@ -84,3 +84,46 @@ header {
     height: 30px;
     border-radius: 20px;
 }
+.round_gallery {
+    display: flex;
+    overflow: hidden;
+
+}
+
+.round_gallery img {
+    padding: 50px;
+    width:200px ;
+    height: 200px;
+    animation: slide 10s linear infinite;
+    border-radius: 300px;
+}
+
+@keyframes slide {
+    0%, 10% {
+        transform: translateX(0);
+    }
+    15%, 25% {
+        transform: translateX(-100%);
+    }
+    30%, 40% {
+        transform: translateX(-200%);
+    }
+    45%, 55% {
+        transform: translateX(-300%);
+    }
+    60%, 70% {
+        transform: translateX(-400%);
+    }
+    75%, 85% {
+        transform: translateX(-500%);
+    }
+    90%, 100% {
+        transform: translateX(-600%);
+    }
+}
+.flowers{
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+}
+
