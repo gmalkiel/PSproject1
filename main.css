@@ -19,6 +19,12 @@ header {
     font-size: 75px;
     position: relative;
 }
+.subtitle{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
 .top_menu ul {
     font-family: Arial, fantasy;
@@ -44,7 +50,7 @@ header {
     font-family: Arial, fantasy;
     text-align: center;
     color: black;
-    padding: 40px 150px;
+    padding: 25px 150px;
     font-size: 17px;
     font-weight: bolder;
 }
@@ -66,6 +72,7 @@ header {
 .rights{
     text-align: center;
     font-family: Arial, fantasy;
+    font-size: 10px;
 }
 
 
