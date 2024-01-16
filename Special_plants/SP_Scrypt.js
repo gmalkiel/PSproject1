@@ -20,12 +20,21 @@ function myFunction() {
   }
 
 // Modal Image Gallery
-function onClick(element) {
+/*function onClick(element) {
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display = "block";
     var captionText = document.getElementById("caption");
     captionText.innerHTML = element.alt;
-  }
+  }*/
+
+  function openLightbox(imageSrc) {
+    document.getElementById('lightbox-image').src = imageSrc;
+    document.getElementById('lightbox').style.display = 'flex';
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+}
   
 
   

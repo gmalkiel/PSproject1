@@ -3,18 +3,10 @@ body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
-  /*display: flex;
-  align-items: center;
-  text-align: center; /* יישור טקסט למרכז */
 }
 
 
 body,h1 {font-family: "Montserrat", sans-serif}
-
-/* יישור לאמצע אתר בסוגריים עבים */
-/*body > * {
-    margin: 10px; /* רווח בין האלמנטים 
-  }*/
 
 img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
@@ -31,13 +23,13 @@ img {margin-bottom: -7px}
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
+  background-image: url("C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 9.jpeg");
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
+  background-image: url("C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 5.jpeg");
   min-height: 400px;
 }
 
@@ -71,50 +63,73 @@ div {
     margin: 10px; /* רווח בין האלמנטים */
   }
 
-/*div :not(#myGrid1):not(#myGrid2):not(#myGrid3){
+  .w3-third {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    overflow-x: auto; /* ספר על מנת להוסיף סרגל גלילה במקרה שהתמונות יוצאות מהגודל של ה-div */
   }
   
-  /* יישור לאמצע אתר בסוגריים עבים */
- /* div :not(#myGrid1):not(#myGrid2):not(#myGrid3) > * {
-    margin: 10px; /* רווח בין האלמנטים */
-  /*}*/
+  .w3-third img {
+    width: 30%; /* או גודל שאתה רוצה */
+    margin-right: 5px; /* מרווח בין התמונות */
+  }
 
+  #secpic {
+    background-image: url("https://res.cloudinary.com/midrag/image/upload/c_scale,w_1206,q_auto,f_auto/c_scale,g_south_east,l_logo_on_img_2,w_65,x_15,y_15/v1648392319/Cms/d1kcl6rxp9vkp7vhcmnk.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-bottom: 70px;
+  }
 
+   /* Define the style for the container */
+   .image-container {
+    display: flex; /* Use flexbox for layout */
+    width: 100%; /* Set the container width to 100% */
+    flex-direction: row; /* Display images in a row */
+    overflow: hidden;
+    margin: 0;
+}
 
-  /*
-  <!-- Photo Grid -->
-    <div class="w3-row" id="myGrid" style="margin-bottom:128px">
-      <div class="w3-third" id="myGrid1">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sound.jpg" style="width:100%">
-        <img src="/w3images/woods.jpg" style="width:100%">
-        <img src="/w3images/rock.jpg" style="width:100%">
-        <img src="/w3images/nature.jpg" style="width:100%">
-        <img src="/w3images/mist.jpg" style="width:100%">
-      </div>
-    
-      <div class="w3-third" id="myGrid2">
-        <img src="/w3images/coffee.jpg" style="width:100%">
-        <img src="/w3images/bridge.jpg" style="width:100%">
-        <img src="/w3images/notebook.jpg" style="width:100%">
-        <img src="/w3images/london.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/avatar_g.jpg" style="width:100%">
-      </div>
-    
-      <div class="w3-third" id="myGrid3">
-        <img src="/w3images/mist.jpg" style="width:100%">
-        <img src="/w3images/workbench.jpg" style="width:100%">
-        <img src="/w3images/gondol.jpg" style="width:100%">
-        <img src="/w3images/skies.jpg" style="width:100%">
-        <img src="/w3images/lights.jpg" style="width:100%">
-        <img src="/w3images/workshop.jpg" style="width:100%">
-      </div>
-    </div>
-  */
-  
+/* Define the style for each image */
+.image-container img {
+    flex: 1;
+    /*width: 30%; /* Set the width of each image */
+    max-height: 400px; /* Set the maximum height for all images */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    object-position: center bottom; /* Cut from the top and leave the bottom visible */
+    margin: 0;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
