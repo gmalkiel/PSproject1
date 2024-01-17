@@ -36,6 +36,9 @@ function closeLightbox() {
     document.getElementById('lightbox').style.display = 'none';
 }
   
+function openExternalLink(url) {
+  window.open(url, '_blank');
+}
 
   
   /*
