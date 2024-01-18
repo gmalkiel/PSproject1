@@ -1,30 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plant Details</title>
-    <link rel="stylesheet" href="Special_plants_style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Website Title</title>
+  <!-- Include your CSS and other meta tags here -->
+  <link rel="stylesheet" href="SP_Style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Define the style for the div with the background image */
+    #mainpic {
+        background-image: url("https://images.immediate.co.uk/production/volatile/sites/10/2021/02/2048x1365-Calla-Lilly-SEO-Hampton_Court_Flower_Show_01_07_19_SC_Zantedeschia_Cantor_Black_a1-ea04a46.jpg?quality=90&fit=700,466");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: grayscale(0%) blur(1px);
+        height: 500px;
+        margin-bottom: 70px;
+    }
+    
+</style>
 </head>
 <body>
 
-    <header>
-        <h1>Our Specials</h1>
+  
+  <!-- First Parallax Plant Image -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="mainpic"></div>
+  
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">Arabian night calla lily</h3>
+    <p class="w3-center"><em>About the plant</em></p>
+    <p>
+        Zantedeschia aethiopica, commonly known as calla lily or arum lily, is a herbaceous perennial plant native to South Africa. Here's some information about Zantedeschia aethiopica:
+        Calla lilies are known for their distinctive, trumpet-shaped flowers and large, arrow-shaped leaves. The flowers are typically white, cream, or pale yellow and are often mistaken for the actual flower, which is a modified leaf called a spathe. The true flowers are tiny and are found on the central spike (spadix) inside the spathe.<br>
+        These plants are popular in gardens and floral arrangements due to their elegant and sculptural appearance. Calla lilies are often used in weddings and other special occasions, symbolizing purity and beauty.
+        Calla lilies prefer moist, well-drained soil and can be grown in full sun to partial shade. They are suitable for borders, containers, or as cut flowers. In colder climates, calla lilies are often grown as annuals or lifted and stored indoors during the winter.
+        While calla lilies are generally non-toxic to humans, it's important to note that all parts of the plant contain calcium oxalate crystals, which can cause skin irritation and mild toxicity if ingested. Therefore, care should be taken when handling the plants, and they should be kept out of reach of children and pets.
+        Zantedeschia aethiopica is just one of many calla lily species and hybrids. Various cultivars are available, offering a range of flower colors, including shades of pink, purple, and orange. When properly cared for, calla lilies can be a stunning addition to gardens and floral arrangements, providing a touch of sophistication and grace.
+        <em>For more information, <span class="more-info" onclick="openExternalLink('https://en.wikipedia.org/wiki/Zantedeschia_aethiopica')">click here</span>.</em>
+    </p>
+    <div>
+      <p><em>For More Pictures, <a href="#morePictures"><b><i class="w3-margin-right"></i>click here</b></a></em></p>
+    </div>
+    
+  </div>
+  
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min" id="secpic">
+    <div class="w3-display-middle">
+      <span class="w3-wide" style="font-size: 100px;">PICTURES</span>
+    </div>
+  </div>
+
+
+
+  <!-- Header -->
+  <div class="w3-opacity">
+    <div class="w3-clear" id="morePictures"></div>
+    <header class="w3-center w3-margin-bottom">
+      <h1><b>Arabian night calla lily</b></h1>
+      <a href="#mainpic" class="w3-center"><i class="fa fa-arrow-up w3-margin-right"></i><em>To the top</em></a>
     </header>
+    </div>
 
-    <main>
-        <img src='images/Spacial Plants/arabian night calla lily Pic/arabian night calla lily 3.jpeg' alt="Plant Image" class="plant-image">
-        <h2 class="plant-title">Arabian night calla lily</h2>
-        <p class="plant-description">
-            <!-- Your plant description goes here (about 10 lines) -->
-            The Arabian Night Calla Lily is renowned for its dark purple to nearly black blooms, characterized by an elegant, trumpet-like shape. This striking perennial is a favorite in gardens and floral arrangements, adding a touch of sophistication.
-            <br/>
-            For more information, <span class="more-info" onclick="openExternalLink('https://www.veseys.com/ca/arabian-night-calla-lily-51169.html')">click here</span>.
-        </p>
-        <div class="more-pictures" onclick="showMorePictures('images/Spacial Plants/arabian night calla lily Pic')">For more pictures</div>
-    </main>
+    <div class="gallery-container">
+        <div class="image-container">
+            <img src="C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\arabian night calla lily Pic\arabian night calla lily 1.jpeg" alt="Image 1" onclick="openLightbox('C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 1.jpeg')">
+            <img src="C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\arabian night calla lily Pic\arabian night calla lily 2.jpeg" alt="Image 2" onclick="openLightbox('C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 2.jpeg')">
+            <img src="C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\arabian night calla lily Pic\arabian night calla lily 3.jpeg" alt="Image 3" onclick="openLightbox('C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 3.jpeg')">
+            <img src="C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\arabian night calla lily Pic\arabian night calla lily 4.jpeg" alt="Image 4" onclick="openLightbox('C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 4.jpeg')">
+        </div>
+        <div class="image-container">
+            <img src="C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\arabian night calla lily Pic\arabian night calla lily 5.jpeg" alt="Image 5" onclick="openLightbox('C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 5.jpeg')">
+            <img src="C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\arabian night calla lily Pic\arabian night calla lily 6.jpeg" alt="Image 6" onclick="openLightbox('C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 6.jpeg')">
+            <img src="C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\arabian night calla lily Pic\arabian night calla lily 7.jpeg" alt="Image 7" onclick="openLightbox('C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 7.jpeg')">
+        </div>
+        <div class="image-container">
+            <img src="C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\arabian night calla lily Pic\arabian night calla lily 8.jpeg" alt="Image 8" onclick="openLightbox('C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 9.jpeg')">
+            <img src="C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\arabian night calla lily Pic\arabian night calla lily 9.jpeg" alt="Image 9" onclick="openLightbox('C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 5.jpeg')">
+            <img src="C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\arabian night calla lily Pic\arabian night calla lily 10.jpeg" alt="Image 10" onclick="openLightbox('C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 2.jpeg')">
+            <img src="C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\arabian night calla lily Pic\arabian night calla lily.jpeg" alt="Image 11" onclick="openLightbox('PSproject1/images/Spacial Plants/Rafflesia Pic/Rafflesia.jpeg')">
+        </div>
+    </div>
 
-    <script src="Special_plants_scrypt.js"></script>
 
+    <div class="lightbox" id="lightbox">
+        <span class="close-icon" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-image">
+    </div>
+
+
+  
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  </footer>
+
+  <script src="SP_Scrypt.js"></script>
+  
 </body>
 </html>

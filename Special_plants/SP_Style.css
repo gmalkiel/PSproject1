@@ -95,11 +95,10 @@ div {
 /* Define the style for each image */
 .image-container img {
     flex: 1;
-    /*width: 30%; /* Set the width of each image */
-    max-height: 300px; /* Set the maximum height for all images */
+    height: 300px; /* Set the height for all images */
     object-fit: cover; /* Cover the container while maintaining aspect ratio */
     object-position: center bottom; /* Cut from the top and leave the bottom visible */
-    margin: 0;
+    margin: 1;
 }
 
 .gallery-container {
@@ -137,4 +136,13 @@ div {
 .more-info {
   color: #007bff;
   cursor: pointer;
+}
+
+@media (max-width: 400) {
+  .image-container img {
+    height: 50px; /* Set the height to 100px when screen width is 600px or smaller */
+  }
+  #pictxt {
+    font-size: medium;
+  }
 }
