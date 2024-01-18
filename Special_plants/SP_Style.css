@@ -12,33 +12,6 @@ img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
 
 
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url("C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 9.jpeg");
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("C:\Users\OWNER\Desktop\לימודים\'שנה ד\פול סטאק\פרק א\PSproject1\images\Spacial Plants\Rafflesia Pic\Rafflesia 5.jpeg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
-
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
@@ -58,7 +31,6 @@ div {
     text-align: center;
   }
   
-  /* יישור לאמצע אתר בסוגריים עבים */
   div  > * {
     margin: 10px; /* רווח בין האלמנטים */
   }
